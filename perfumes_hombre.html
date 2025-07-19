@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfume para Caballero - Sophia's Wishes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="cosmeticos.html">Cosméticos</a></li>
+      <li><a href="perfumeria.html">Perfumería</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <a href="index.html">
+      <img src="img/logo.jpg" alt="Sophia's Wishes Logo" class="logo">
+    </a>
+    <h1>Perfume para Caballero</h1>
+    <p>Explora nuestra colección exclusiva</p>
+  </header>
+
+  <main class="categories">
+    
+    <div class="category-card" onclick="mostrarDescripcion(this, 'Fragancia amaderada intensa con notas de cedro.', 610)">
+      <img src="img/perfume_hombre.jpg" alt="Perfume para Caballero 1">
+      <h2>Perfume para Caballero 1</h2>
+      <p><strong>L 610</strong></p>
+      <button onclick="event.stopPropagation(); agregarAlCarrito('Perfume para Caballero 1', 1, 610)">Agregar al carrito</button>
+      <div class="descripcion-producto" style="display: none;"></div>
+    </div>
+    <div class="category-card" onclick="mostrarDescripcion(this, 'Aroma fresco con esencia de menta y lavanda.', 620)">
+      <img src="img/perfume_hombre.jpg" alt="Perfume para Caballero 2">
+      <h2>Perfume para Caballero 2</h2>
+      <p><strong>L 620</strong></p>
+      <button onclick="event.stopPropagation(); agregarAlCarrito('Perfume para Caballero 2', 1, 620)">Agregar al carrito</button>
+      <div class="descripcion-producto" style="display: none;"></div>
+    </div>
+    <div class="category-card" onclick="mostrarDescripcion(this, 'Perfume masculino con notas de cuero y tabaco.', 630)">
+      <img src="img/perfume_hombre.jpg" alt="Perfume para Caballero 3">
+      <h2>Perfume para Caballero 3</h2>
+      <p><strong>L 630</strong></p>
+      <button onclick="event.stopPropagation(); agregarAlCarrito('Perfume para Caballero 3', 1, 630)">Agregar al carrito</button>
+      <div class="descripcion-producto" style="display: none;"></div>
+    </div>
+    <div class="category-card" onclick="mostrarDescripcion(this, 'Fragancia deportiva con cítricos y vetiver.', 640)">
+      <img src="img/perfume_hombre.jpg" alt="Perfume para Caballero 4">
+      <h2>Perfume para Caballero 4</h2>
+      <p><strong>L 640</strong></p>
+      <button onclick="event.stopPropagation(); agregarAlCarrito('Perfume para Caballero 4', 1, 640)">Agregar al carrito</button>
+      <div class="descripcion-producto" style="display: none;"></div>
+    </div>
+    <div class="category-card" onclick="mostrarDescripcion(this, 'Aroma sofisticado con sándalo y almizcle.', 650)">
+      <img src="img/perfume_hombre.jpg" alt="Perfume para Caballero 5">
+      <h2>Perfume para Caballero 5</h2>
+      <p><strong>L 650</strong></p>
+      <button onclick="event.stopPropagation(); agregarAlCarrito('Perfume para Caballero 5', 1, 650)">Agregar al carrito</button>
+      <div class="descripcion-producto" style="display: none;"></div>
+    </div>
+    <div class="category-card" onclick="mostrarDescripcion(this, 'Toque moderno con bergamota y pimienta negra.', 660)">
+      <img src="img/perfume_hombre.jpg" alt="Perfume para Caballero 6">
+      <h2>Perfume para Caballero 6</h2>
+      <p><strong>L 660</strong></p>
+      <button onclick="event.stopPropagation(); agregarAlCarrito('Perfume para Caballero 6', 1, 660)">Agregar al carrito</button>
+      <div class="descripcion-producto" style="display: none;"></div>
+    </div>
+    <div class="category-card" onclick="mostrarDescripcion(this, 'Perfume elegante con vainilla y ámbar gris.', 670)">
+      <img src="img/perfume_hombre.jpg" alt="Perfume para Caballero 7">
+      <h2>Perfume para Caballero 7</h2>
+      <p><strong>L 670</strong></p>
+      <button onclick="event.stopPropagation(); agregarAlCarrito('Perfume para Caballero 7', 1, 670)">Agregar al carrito</button>
+      <div class="descripcion-producto" style="display: none;"></div>
+    </div>
+    <div class="category-card" onclick="mostrarDescripcion(this, 'Fragancia casual con mandarina y salvia.', 680)">
+      <img src="img/perfume_hombre.jpg" alt="Perfume para Caballero 8">
+      <h2>Perfume para Caballero 8</h2>
+      <p><strong>L 680</strong></p>
+      <button onclick="event.stopPropagation(); agregarAlCarrito('Perfume para Caballero 8', 1, 680)">Agregar al carrito</button>
+      <div class="descripcion-producto" style="display: none;"></div>
+    </div>
+    <div class="category-card" onclick="mostrarDescripcion(this, 'Aroma intenso con notas de café y cuero.', 690)">
+      <img src="img/perfume_hombre.jpg" alt="Perfume para Caballero 9">
+      <h2>Perfume para Caballero 9</h2>
+      <p><strong>L 690</strong></p>
+      <button onclick="event.stopPropagation(); agregarAlCarrito('Perfume para Caballero 9', 1, 690)">Agregar al carrito</button>
+      <div class="descripcion-producto" style="display: none;"></div>
+    </div>
+    <div class="category-card" onclick="mostrarDescripcion(this, 'Mezcla vibrante de pachulí, ámbar y especias.', 700)">
+      <img src="img/perfume_hombre.jpg" alt="Perfume para Caballero 10">
+      <h2>Perfume para Caballero 10</h2>
+      <p><strong>L 700</strong></p>
+      <button onclick="event.stopPropagation(); agregarAlCarrito('Perfume para Caballero 10', 1, 700)">Agregar al carrito</button>
+      <div class="descripcion-producto" style="display: none;"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sophia’s Wishes - Todos los derechos reservados</p>
+  </footer>
+
+  <div class="boton-carrito-container">
+    <a href="carrito.html" class="boton-carrito">
+      🛍️ <span id="carrito-contador" class="contador-carrito">0</span>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cosméticos - Sophia's Wishes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="cosmeticos.html">Cosméticos</a></li>
+      <li><a href="perfumeria.html">Perfumería</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <a href="index.html">
+      <img src="img/logo.jpg" alt="Sophia's Wishes Logo" class="logo">
+    </a>
+    <h1>Cosméticos</h1>
+    <p>Explora nuestra selección de maquillaje para cada ocasión</p>
+  </header>
+
+  <main class="categories">
+    <div class="category-card" onclick="mostrarDescripcion(this, 'Labial mate de larga duración con tonos intensos. Ideal para todo el día.', 199)">
+      <img src="img/labiales.jpg" alt="Labiales">
+      <h2>Labiales</h2>
+      <div class="descripcion-producto" style="display: none;"></div>
+    </div>
+    <div class="category-card" onclick="mostrarDescripcion(this, 'Paleta de sombras con 12 tonos vibrantes y duraderos.', 299)">
+      <img src="img/sombras.jpg" alt="Sombras">
+      <h2>Sombras</h2>
+      <div class="descripcion-producto" style="display: none;"></div>
+    </div>
+    <div class="category-card" onclick="mostrarDescripcion(this, 'Base líquida con cobertura media-alta para todo tipo de piel.', 349)">
+      <img src="img/base.jpg" alt="Base de maquillaje">
+      <h2>Bases</h2>
+      <div class="descripcion-producto" style="display: none;"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sophia’s Wishes - Todos los derechos reservados</p>
+  </footer>
+
+  <div class="boton-carrito-container">
+    <a href="carrito.html" class="boton-carrito">
+      🛍️ <span id="carrito-contador" class="contador-carrito">0</span>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
